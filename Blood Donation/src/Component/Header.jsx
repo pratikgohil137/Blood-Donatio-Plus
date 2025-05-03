@@ -25,10 +25,10 @@ const Header = () => {
                     </li>
                     <li>
                         <NavLink
-                            to="/register"
+                            to="/login"
                             className={({ isActive }) => (isActive ? "active-link" : "")}
                         >
-                            Register
+                            Login
                         </NavLink>
                     </li>
                     <li>
@@ -40,16 +40,10 @@ const Header = () => {
                         </NavLink>
                     </li>
                     <li className="dropdown">
-                        <NavLink
-                            to="/register"
-                            className={({ isActive }) => (isActive ? "active-link" : "")}
-                        >
+                        <NavLink>
                             Donate Blood
                         </NavLink>
                         <ul className="dropdown-menu">
-                            <li>
-                                <NavLink to="/login">Login</NavLink>
-                            </li>
                             <li>
                                 <NavLink to="/eligible">Eligibility</NavLink>
                             </li>
@@ -57,29 +51,23 @@ const Header = () => {
                                 <NavLink to="/blood-camp">Blood Donation Camp</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/awareness">Awareness</NavLink>
+                                <NavLink to="/AwarenessSection">Awareness</NavLink>
                             </li>
                         </ul>
                     </li>
                     <li className="dropdown">
-                        <NavLink
-                            to="/register"
-                            className={({ isActive }) => (isActive ? "active-link" : "")}
-                        >
+                        <NavLink>
                             Receive Blood
                         </NavLink>
                         <ul className="dropdown-menu">
                             <li>
-                                <NavLink to="/login">Login</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/find-blood-bank">Find Blood Bank</NavLink>
+                                <NavLink to="/show-hospital">Find Blood Bank</NavLink>
                             </li>
                             <li>
                                 <NavLink to="/blood-donation-guidelines">Blood Donation Guidelines</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/awareness">Awareness</NavLink>
+                                <NavLink to="/AwarenessSection">Awareness</NavLink>
                             </li>
                         </ul>
                     </li>
@@ -91,6 +79,14 @@ const Header = () => {
                             Organization
                         </NavLink>
                     </li>
+                    {/* <li>
+                        <NavLink
+                            to="/admin-dashboard"
+                            className={({ isActive }) => (isActive ? "active-link" : "")}
+                        >
+                            Admin Dashboard
+                        </NavLink>
+                    </li> */}
                 </ul>
             </nav>
         </header>

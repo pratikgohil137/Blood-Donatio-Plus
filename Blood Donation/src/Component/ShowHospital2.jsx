@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import HospitalData from "../assets/HospitalData.json"; // Import JSON file
 import { IoLocationSharp } from "react-icons/io5";
 
-const ShowHospital = () => {
+const ShowHospital2 = () => {
   const [hospitals, setHospitals] = useState([]);
   const [filteredHospitals, setFilteredHospitals] = useState([]);
   const [selectedState, setSelectedState] = useState("");
@@ -137,4 +137,4 @@ const ShowHospital = () => {
   );
 };
 
-export default ShowHospital;
+export default ShowHospital2;
